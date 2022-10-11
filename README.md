@@ -1,6 +1,6 @@
 # fake_whatsapp
 
-A new Flutter project.
+Just a Flutter project to mimic WhatsApp UI and learn in the process
 
 ## Getting Started
 
