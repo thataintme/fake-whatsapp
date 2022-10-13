@@ -19,7 +19,7 @@ class ChatModel {
 
 List<ChatModel> dummyData = [
   ChatModel(
-      name: "Amma",
+      name: "Deadpool",
       message: "where r u",
       time: "18:53",
       dpUrl: "",

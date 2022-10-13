@@ -19,7 +19,11 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
   @override
   void initState() {
     super.initState();
-    _tabController = new TabController(length: 4, vsync: this, initialIndex: 1);
+    _tabController = new TabController(
+      length: 4,
+      vsync: this,
+      initialIndex: 1,
+    );
   }
 
   @override
@@ -30,7 +34,17 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
         elevation: 1,
         bottom: TabBar(
           controller: _tabController,
-          indicatorColor: Colors.white,
+          labelColor: Color.fromARGB(141, 0, 255, 170),
+          labelStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1,
+          ),
+          unselectedLabelColor: Colors.grey,
+          unselectedLabelStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+          indicatorColor: Color.fromARGB(141, 0, 255, 170),
+          indicatorWeight: 4,
           tabs: <Widget>[
             Tab(
               icon: Icon(Icons.camera_alt),
@@ -58,7 +72,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (() => {}),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+        backgroundColor: Color.fromARGB(141, 0, 255, 170),
         child: Icon(Icons.chat),
       ),
     );
